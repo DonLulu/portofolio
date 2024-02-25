@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Source+Code+Pro:wght@500&family=Spline+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+
+@font-face {
+    font-family: 'hurlers';
+    src: url('fonts/hurlersfreeregular-ezam6-webfont.woff2') format('woff2'),
+         url('fonts/hurlersfreeregular-ezam6-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*-------------general-------------------*/
+html, body { height: 100%; }
+
+body{
+    background: black;
+    background-attachment:fixed;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-family: 'Poppins';
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.text{
+    font-size: 30px;
+    letter-spacing: 0px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 40px;
+}
+
+/*-------------background waves-------------------*/
+.backwaves{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 2500px;
+    z-index: 0;
+}
+/*--------------------background_cover---------------*/
+.over_bg{
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    position: relative;
+    z-index: 30;
+}
+
+/*-------------logo-------------------*/
+.logo_name{
+    position: relative;
+    z-index: 20;
+    flex: auto;
+}
+
+.logo_header{
+    width:200px;
+}
+
+/*------------------buttons-------------------------*/
+.btn-primary {
+    background-image: linear-gradient(to right,  rgb(33, 24, 66) 25%, rgb(81, 11, 90) 50%, rgb(26, 101, 114) 100%);
+    margin: 10px;
+    font-size: 20px;
+    letter-spacing: 0px;
+    padding: 2px 130px;
+    transition: 0.55s;
+    border: none;
+    border-radius: 6px;
+    background-size: 420% auto;
+    padding-right: 1%;
+    padding-left: 1%;
+    margin-left: auto;
+  }
+  
+  .btn-primary:hover {
+    background-position: right;
+    color: #fff;
+    text-decoration: none;
+    transform: scale(1.03);
+}
+
+/*-------------------------header---------------------------------*/
+
+header {
+    transition: top 0.2s ease-in-out;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.sticky {
+    backdrop-filter: brightness(110%) blur(60px);
+    -webkit-backdrop-filter: brightness(110%) blur(60px);
+    display: flex;
+}

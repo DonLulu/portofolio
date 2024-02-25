@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="theme-color" content="#000000">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Portofolio</title>
+    </head>
+    <body>
+
+    <!-- Header -->
+    <header class="nav-down">
+        <div class="sticky flex">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="https://energo.lucascizeron.repl.co/#"><p class="logo">lucas.cizeron<span class="underscore">_</span></p></a>
+                <!-- Add your navigation links here -->
+            </nav>
+            <li class="navbar-brand align_right" onClick="document.getElementById('scrollto').scrollIntoView();"><p class="contact">contact<span class="underscore2">_</span></p></li>
+        </div>
+        
+    </header>
+
+    <!-- lucas cizeron 3d spinner-->
+    
+    <spline-viewer loading="eager" class="logo_name remove_logo" loading-anim-type="spinner-big-light" url="https://prod.spline.design/AqRg5sbGuE7JoInu/scene.splinecode"></spline-viewer>
+
+    <section>
+        <div class="over_bg", class="container mt-4">
+          <div class="marquee">
+            <div class="track">
+              <div class="content">&nbsp; <p class="marquee-text">ÉTUDIANT PASSIONNÉ À L'EPITA, ÉCOLE POUR L'INFORMATIQUE ET LES TECHNIQUES AVANCÉES, LYON • ÉTUDIANT PASSIONNÉ À L'EPITA, ÉCOLE POUR L'INFORMATIQUE ET LES TECHNIQUES AVANCÉES, LYON • ÉTUDIANT PASSIONNÉ À L'EPITA, ÉCOLE POUR L'INFORMATIQUE ET LES TECHNIQUES AVANCÉES, LYON • ÉTUDIANT PASSIONNÉ À L'EPITA, ÉCOLE POUR L'INFORMATIQUE ET LES TECHNIQUES AVANCÉES, LYON • ÉTUDIANT PASSIONNÉ À L'EPITA, ÉCOLE POUR L'INFORMATIQUE ET LES TECHNIQUES AVANCÉES, LYON • ÉTUDIANT PASSIONNÉ À L'EPITA, ÉCOLE POUR L'INFORMATIQUE ET LES TECHNIQUES AVANCÉES, LYON •</p></div>
+            </div>
+          </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text">
+                        
+                        Actuellement en quête de connaissances approfondies dans le domaine de l'informatique, je m'investis pleinement dans un cursus d'ingénierie informatique à la pointe des technologies.
+        Mon parcours à l'EPITA est caractérisé par une approche pratique et orientée projet.
+                    </p>
+                </div>
+                <div class="col-md-6">  
+                    <spline-viewer class="pcb" loading="eager" loading-anim-type="spinner-big-light" url="https://prod.spline.design/QqYwLzXDQnMXOpKR/scene.splinecode"></spline-viewer>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row flex-middle">
+              <div class="marquee">
+                <div class="track">
+                  <div class="content">&nbsp; <p class="marquee-text">CONTACT • LINKEDIN • EMAIL • CONTACT • LINKEDIN • EMAIL • CONTACT • LINKEDIN • EMAIL • CONTACT • LINKEDIN • EMAIL • CONTACT • LINKEDIN • EMAIL • CONTACT • LINKEDIN • EMAIL • CONTACT • LINKEDIN • EMAIL • CONTACT • LINKEDIN • EMAIL • CONTACT • LINKEDIN • EMAIL • CONTACT • LINKEDIN • EMAIL • CONTACT • LINKEDIN • EMAIL • CONTACT • LINKEDIN • EMAIL •</p></div>
+                </div>
+              </div>
+              <spline-viewer class="keyboard" loading="eager" id="scrollto" loading-anim-type="spinner-big-light" url="https://prod.spline.design/hGPD9Z-ayWv4jtLE/scene.splinecode"></spline-viewer>
+              <spline-viewer class="backwaves-down" loading="eager" loading-anim-type="spinner-big-light" url="https://prod.spline.design/IvTm2hiT843cP25D/scene.splinecode"></spline-viewer>
+            </div>
+        </div>
+    </section>
+    
+
+<!--background waves-->
+<spline-viewer class="backwaves" loading-anim-type="spinner-big-light" url="https://prod.spline.design/8n5O5q368MQBAV5G/scene.splinecode"></spline-viewer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const splineViewers = document.querySelectorAll('spline-viewer');
+  
+      splineViewers.forEach(splineViewer => {
+        if (splineViewer) {
+          const shadowRoot = splineViewer.shadowRoot;
+  
+          if (shadowRoot) {
+            const style = document.createElement('style');
+  
+            style.textContent = `
+              #logo {
+                visibility: hidden;
+              }
+            `;
+  
+            shadowRoot.appendChild(style);
+          }
+        }
+      });
+    });
+  </script>
+  
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.54/build/spline-viewer.js"></script>
+
+<script>
+    const underscore = document.querySelector('.underscore');
+    document.addEventListener('DOMContentLoaded', function() {
+      setInterval(function() {
+        underscore.style.visibility = (underscore.style.visibility === 'visible') ? 'hidden' : 'visible';
+      }, 600);
+    });
+    const underscore2 = document.querySelector('.underscore2');
+    document.addEventListener('DOMContentLoaded', function() {
+      setInterval(function() {
+        underscore2.style.visibility = (underscore2.style.visibility === 'visible') ? 'hidden' : 'visible';
+      }, 600);
+    });
+  </script>
+</body>
+       
+</html>
