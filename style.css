@@ -10,8 +10,21 @@
 
 }
 
+@font-face {
+    font-family: 'VT323';
+    src: url('fonts/VT323-Regular.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*-------------general-------------------*/
-html, body { height: 100%; }
+html, body { 
+    height: 100%;  
+    scroll-behavior: smooth;
+}
+
+li { cursor: pointer; }
+
 
 body{
     background: black;
@@ -24,6 +37,12 @@ body{
     padding: 0;
     overflow-x: hidden;
 }
+.row{
+    margin: 0px;
+}
+.col-md-6{
+    padding: 0px;
+}
 
 .text{
     font-size: 30px;
@@ -34,17 +53,67 @@ body{
     padding: 40px;
 }
 
+.title{
+    display: flex;
+    align-self: center;
+    font-size: 40px;
+    letter-spacing: 0px;
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding: 5px;
+}
+
+.pcb{
+    height: 100%;
+}
+
+.keyboard{
+    width: 412px;
+    align-content: center;
+    display: flex;
+}
+
+.purple{
+    color: rgba(192,123,194,255);
+}
+
+.yellow{
+    color: rgba(190,199,131,255);
+}
+
+.blue{
+    color: rgba(108,180,180,255);
+}
+
+#logo{
+    visibility: hidden;
+    margin-right: auto;
+}
+
+#scrollto{
+    z-index: 30;
+}
+
 /*-------------background waves-------------------*/
 .backwaves{
     position: absolute;
-    top: 0px;
+    top: -400px;
     left: 0px;
     height: 2500px;
     z-index: 0;
 }
+
+.backwaves-down{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 500px;
+    z-index: 0;
+}
 /*--------------------background_cover---------------*/
 .over_bg{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     justify-content: center;
     position: relative;
     z-index: 30;
@@ -63,7 +132,7 @@ body{
 
 /*------------------buttons-------------------------*/
 .btn-primary {
-    background-image: linear-gradient(to right,  rgb(33, 24, 66) 25%, rgb(81, 11, 90) 50%, rgb(26, 101, 114) 100%);
+    background-image: linear-gradient(to right,  rgba(4,30,66,255) 25%, rgba(30,50,102,255) 50%, rgba(0,144,125,255) 100%);
     margin: 10px;
     font-size: 20px;
     letter-spacing: 0px;
@@ -87,7 +156,6 @@ body{
 /*-------------------------header---------------------------------*/
 
 header {
-    transition: top 0.2s ease-in-out;
     height: 40px;
     position: fixed;
     top: 0;
@@ -99,4 +167,97 @@ header {
     backdrop-filter: brightness(110%) blur(60px);
     -webkit-backdrop-filter: brightness(110%) blur(60px);
     display: flex;
+}
+
+
+.logo {
+    display: inline-block;
+    position: relative;
+    font-family: 'VT323', sans-serif;
+    font-size: 3ch;
+    margin: 0;
+    color: #06b709;
+    -webkit-text-shadow:0px 0px 20px rgba(0,255,68,1);
+    -moz-text-shadow: 0px 0px 20px rgba(0,255,68,1);
+    text-shadow: 0px 0px 20px rgba(0,255,68,1);
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-middle{
+    display: flex;
+    justify-content: center;
+}
+
+.align_right{
+    position: relative;
+    margin-top: 10px;
+}
+
+.contact {
+    font-family: 'VT323', sans-serif;
+    font-size: 3ch;
+    color: #06b709;
+    -webkit-text-shadow: 0px 0px 20px rgba(0,255,68,1);
+    -moz-text-shadow: 0px 0px 20px rgba(0,255,68,1);
+    text-shadow: 0px 0px 20px rgba(0,255,68,1);
+}
+
+.contact_bar {
+    display: flex;
+    margin: 0px;
+}
+
+.underscore {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+  }
+
+  .underscore2 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+  }
+
+
+/*-----------------------------------Marquee-----------------------------------*/
+.marquee {
+    position:relative;
+    width: 100%;
+    max-width: 100%;
+    height: 100px;
+    overflow-x: hidden;
+    z-index: 30;
+  }
+
+  .marquee-text {
+    display: inline-block;
+    position: relative;
+    font-family: 'VT323', sans-serif;
+    font-size: 5ch;
+    margin: 0;
+    color: #06b709;
+    -webkit-text-shadow:0px 0px 20px rgba(0,255,68,1);
+    -moz-text-shadow: 0px 0px 20px rgba(0,255,68,1);
+    text-shadow: 0px 0px 20px rgba(0,255,68,1);
+}
+  
+.track {
+width: 100%;
+position: absolute;
+white-space: nowrap;
+will-change: transform;
+animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+0% { transform: translateX(0); }
+99% { transform: translateX(-300%); }
+100% { transform: translateX(0); }
 }
