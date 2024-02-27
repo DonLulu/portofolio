@@ -50,7 +50,9 @@ body{
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin: auto;
     padding: 40px;
+    justify-self: center;
 }
 
 .title{
@@ -253,11 +255,11 @@ width: 100%;
 position: absolute;
 white-space: nowrap;
 will-change: transform;
-animation: marquee 15s linear infinite;
+animation: marquee 32s linear infinite;
 }
 
 @keyframes marquee {
 0% { transform: translateX(0); }
-99% { transform: translateX(-300%); }
+99% { transform: translateX(-200%); }
 100% { transform: translateX(0); }
 }
