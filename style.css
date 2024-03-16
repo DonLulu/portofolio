@@ -37,15 +37,18 @@ body{
     padding: 0;
     overflow-x: hidden;
 }
+
+
 .row{
     margin: 0px;
 }
-.col-md-6{
+.col-lg-6{
     padding: 0px;
+    margin: auto;
 }
 
 .text{
-    font-size: 30px;
+    font-size: 23px;
     letter-spacing: 0px;
     justify-content: center;
     padding-top: 20px;
@@ -57,8 +60,21 @@ body{
 
 .title{
     display: flex;
+    z-index: 999;
+    font-size: 4ch;
+    letter-spacing: 0px;
+    justify-content: center;
+    margin-top: 1ch;
+    padding-bottom: 0px;
+    padding: 0px;
+}
+
+
+.pcb{
+    display: flex;
     align-self: center;
     font-size: 40px;
+    height: 500px;
     letter-spacing: 0px;
     justify-content: center;
     padding-top: 0px;
@@ -66,9 +82,7 @@ body{
     padding: 5px;
 }
 
-.pcb{
-    height: 100%;
-}
+
 
 .keyboard{
     width: 412px;
@@ -106,6 +120,14 @@ body{
     z-index: 0;
 }
 
+.error_backwaves{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 1400px;
+    z-index: 0;
+}
+
 .backwaves-down{
     position: absolute;
     bottom: 0px;
@@ -122,10 +144,14 @@ body{
 }
 
 /*-------------logo-------------------*/
+.margin-left{
+    margin-left: 10px;
+}
 .logo_name{
     position: relative;
     z-index: 20;
     flex: auto;
+    size: 50%;
 }
 
 .logo_header{
@@ -200,8 +226,11 @@ header {
 }
 
 .contact {
+    display: inline-block;
+    position: relative;
     font-family: 'VT323', sans-serif;
     font-size: 3ch;
+    margin: auto;
     color: #06b709;
     -webkit-text-shadow: 0px 0px 20px rgba(0,255,68,1);
     -moz-text-shadow: 0px 0px 20px rgba(0,255,68,1);
@@ -258,8 +287,94 @@ will-change: transform;
 animation: marquee 32s linear infinite;
 }
 
-@keyframes marquee {
-0% { transform: translateX(0); }
-99% { transform: translateX(-200%); }
-100% { transform: translateX(0); }
+@media (min-width: 768px) {
+    @keyframes marquee {
+    0% { transform: translateX(0); }
+    99% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+    }
 }
+
+@media (max-width: 768px) {
+    .marquee-text {
+        font-size: 3ch;
+    }
+    .logo {
+        font-family: 'VT323', sans-serif;
+        font-size: 2ch;
+    }
+    .contact {
+        font-family: 'VT323', sans-serif;
+        font-size: 2ch;
+    }
+
+    .title{
+        font-size: 3ch;
+    }
+    @keyframes marquee {
+    0% { transform: translateX(0); }
+    99% { transform: translateX(-1000%); }
+    100% { transform: translateX(0); }
+    }
+}
+
+/*-------------------------accordion---------------------------------*/
+.accordion_text{
+    color: rgb(255, 255, 255);
+}
+
+/* Define variables */
+:root {
+    --accordion-bg: transparent; /* Transparent background */
+    --accordion-outline-color: #ffffff; /* White outline color */
+    --accordion-bg-hover: #2c2c2c71; /* Darker background on hover */
+    --accordion-bg-active: #60606000; /* Even darker background when selected */
+    --accordion-text-color: #ffffff; /* White text */
+    --accordion-arrow-color: #ffffff; /* White arrow color */
+  }
+  
+  /* Accordion styles */
+  .accordion-item {
+    background-color: var(--accordion-bg);
+    border: 1px solid var(--accordion-outline-color); /* White outline */
+    border-radius: 0.25rem;
+    margin-left: 2ch;
+    margin-right: 2ch;
+  }
+  
+  .accordion-button {
+    
+    background-color: var(--accordion-bg);
+    color: var(--accordion-text-color);
+    border: none; /* Remove border */
+  }
+  
+  .accordion-button:hover {
+    background-color: var(--accordion-bg-hover);
+  }
+  
+  .accordion-button:not(.collapsed)::after {
+    background-color: var(--accordion-bg-active);
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: rgba(28, 28, 28, 0.134);
+    color: var(--accordion-text-color);
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none; /* Transparent focus effect */
+  }
+  
+  .accordion-button:not(.collapsed)::after {
+    box-shadow: none;
+  }
+  
+  .accordion-button::after {
+    border-color: transparent transparent var(--accordion-arrow-color); /* Transparent arrow border */
+  }
+  
+  .accordion-body {
+    border-top: 1px solid white;
+  }
+  
