@@ -39,6 +39,10 @@ body{
 }
 
 
+.vid{
+    position: absolute;
+}
+
 .row{
     margin: 0px;
 }
@@ -48,13 +52,12 @@ body{
 }
 
 .text{
-    font-size: 23px;
     letter-spacing: 0px;
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
     margin: auto;
-    padding: 40px;
+    padding: 1.5vw;
     justify-self: center;
 }
 
@@ -72,16 +75,18 @@ body{
 
 .pcb{
     display: flex;
+    flex: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
     align-self: center;
-    font-size: 40px;
-    height: 500px;
-    letter-spacing: 0px;
-    justify-content: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding: 5px;
+    margin: auto;
+    vertical-align: auto;
 }
 
+.pcbcol{
+    display: flex;
+}
 
 
 .keyboard{
@@ -134,6 +139,7 @@ body{
     left: 0px;
     height: 500px;
     z-index: 0;
+    padding: 0;
 }
 /*--------------------background_cover---------------*/
 .over_bg{
@@ -149,9 +155,13 @@ body{
 }
 .logo_name{
     position: relative;
-    z-index: 20;
+    object-fit: contain;
+    z-index: 999;
+    display: flex;
     flex: auto;
-    size: 50%;
+    width: 100%;
+    max-height: 100%;
+    align-self: center;
 }
 
 .logo_header{
@@ -197,6 +207,18 @@ header {
     display: flex;
 }
 
+a:link { 
+    text-decoration: none; 
+  } 
+  a:visited { 
+    text-decoration: none; 
+  } 
+  a:hover { 
+    text-decoration: none; 
+  } 
+  a:active { 
+    text-decoration: none; 
+  }
 
 .logo {
     display: inline-block;
@@ -212,12 +234,16 @@ header {
 
 .flex{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-content: center;
+    
 }
 
 .flex-middle{
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .align_right{
@@ -285,6 +311,38 @@ position: absolute;
 white-space: nowrap;
 will-change: transform;
 animation: marquee 32s linear infinite;
+}
+
+
+
+@media (min-width: 1200px) {
+    .text{
+        font-size: 1.7vw;
+    }
+    .pcb{
+        padding: 5px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .text{
+        font-size: 2.5vw;
+    }
+    .pcb{
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 700px) {
+    .text{
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .text{
+        font-size: 4.5vw;
+    }
 }
 
 @media (min-width: 768px) {
