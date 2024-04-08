@@ -235,6 +235,14 @@ J'ai pris part à de nombreuses activités au sein de l'entreprise notamment la 
 </body>
 
 <script>
+  if (navigator.platform === 'iPad' || navigator.platform === 'iPhone' || navigator.platform === 'iPod') {
+    console.log("This is an iOS device.");
+} else {
+    console.log("This is not an iOS device!");
+}
+</script>
+
+<script>
   document.addEventListener('DOMContentLoaded', () => {
     const splineViewers = document.querySelectorAll('spline-viewer');
 
