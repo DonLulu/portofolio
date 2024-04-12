@@ -32,7 +32,7 @@
 
   <!-- lucas cizeron 3d spinner-->
 
-  <video class="logo_name" width="1024" height="1024" autoplay muted loop>
+  <video class="logo_name" width="1024" height="1024" autoplay muted loop playsinline>
     <source src="ressources/logo.mp4" type='video/mp4;codecs=hvc1'>
     <source src="ressources/logo.webm" type="video/webm">
   Your browser does not support the video.
@@ -66,9 +66,10 @@
           </p>
         </div>
         <div class="pcbcol col-xl-6">
-          <video class="pcb" autoplay muted loop>
+          <video class="pcb" autoplay muted loop playsinline>
+            <source src="ressources/pcb.mp4" type='video/mp4;codecs=hvc1'>
             <source src="ressources/pcb.webm" type="video/webm">
-          Your browser does not support the video.
+            Your browser does not support the video.
           </video>
         </div>
       </div>
@@ -271,12 +272,6 @@ J'ai pris part à de nombreuses activités au sein de l'entreprise notamment la 
   document.addEventListener('DOMContentLoaded', function() {
     setInterval(function() {
       underscore.style.visibility = (underscore.style.visibility === 'visible') ? 'hidden' : 'visible';
-    }, 600);
-  });
-  const underscore2 = document.querySelector('.underscore2');
-  document.addEventListener('DOMContentLoaded', function() {
-    setInterval(function() {
-      underscore2.style.visibility = (underscore2.style.visibility === 'visible') ? 'hidden' : 'visible';
     }, 600);
   });
 </script>
