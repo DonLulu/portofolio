@@ -255,7 +255,7 @@
   // Function to check if the user is using Safari browser
   var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-  if (!isSafari)
+  if (isSafari)
     placeholder.innerHTML = '<br> You are using Safari. Please visit the website using Google or Firefox for the best experience. <br><br>';
   else if (isMobileDevice())
     placeholder.innerHTML = '<br> You are using a mobile device. Please visit the website on a computer for the best experience. <br><br>';
