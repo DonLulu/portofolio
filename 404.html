@@ -83,7 +83,7 @@
 </body>
 
 <script>
-  var isSafariiOS = /(iPhone|iPad|iPod)/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+  var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
   var video1 = document.querySelector('.logo_name');
 

@@ -241,7 +241,7 @@
 </body>
 
 <script>
-  var isSafariiOS = /(iPhone|iPad|iPod)/.test(navigator.platform) && /Apple/.test(navigator.vendor);
+  var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
   console.log("is safari:" + isSafariiOS);
 
   var video1 = document.querySelector('.logo_name');
