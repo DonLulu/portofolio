@@ -4,7 +4,7 @@
 @font-face {
     font-family: 'hurlers';
     src: url('fonts/hurlersfreeregular-ezam6-webfont.woff2') format('woff2'),
-         url('fonts/hurlersfreeregular-ezam6-webfont.woff') format('woff');
+        url('fonts/hurlersfreeregular-ezam6-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -18,17 +18,20 @@
 }
 
 /*-------------general-------------------*/
-html, body { 
-    height: 100%;  
+html,
+body {
+    height: 100%;
     scroll-behavior: smooth;
 }
 
-li { cursor: pointer; }
+li {
+    cursor: pointer;
+}
 
 
-body{
+body {
     background: black;
-    background-attachment:fixed;
+    background-attachment: fixed;
     color: rgb(255, 255, 255);
     font-weight: 800;
     font-family: 'Poppins';
@@ -39,19 +42,20 @@ body{
 }
 
 
-.vid{
+.vid {
     position: absolute;
 }
 
-.row{
+.row {
     margin: 0px;
 }
-.col-lg-6{
+
+.col-lg-6 {
     padding: 0px;
     margin: auto;
 }
 
-.text{
+.text {
     letter-spacing: 0px;
     justify-content: center;
     padding-top: 20px;
@@ -61,7 +65,7 @@ body{
     justify-self: center;
 }
 
-.title{
+.title {
     display: flex;
     z-index: 999;
     font-size: 4ch;
@@ -73,7 +77,7 @@ body{
 }
 
 
-.pcb{
+.pcb {
     display: flex;
     flex: auto;
     max-width: 100%;
@@ -84,40 +88,40 @@ body{
     vertical-align: auto;
 }
 
-.pcbcol{
+.pcbcol {
     display: flex;
 }
 
 
-.keyboard{
+.keyboard {
     width: 412px;
     align-content: center;
     display: flex;
 }
 
-.purple{
-    color: rgba(192,123,194,255);
+.purple {
+    color: rgba(192, 123, 194, 255);
 }
 
-.yellow{
-    color: rgba(250,220,131,255);
+.yellow {
+    color: rgba(250, 220, 131, 255);
 }
 
-.blue{
-    color: rgba(108,180,180,255);
+.blue {
+    color: rgba(108, 180, 180, 255);
 }
 
-#logo{
+#logo {
     visibility: hidden;
     margin-right: auto;
 }
 
-#scrollto{
+#scrollto {
     z-index: 30;
 }
 
 /*-------------background waves-------------------*/
-.backwaves{
+.backwaves {
     position: absolute;
     top: -400px;
     left: 0px;
@@ -125,7 +129,7 @@ body{
     z-index: 0;
 }
 
-.error_backwaves{
+.error_backwaves {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -133,7 +137,7 @@ body{
     z-index: 0;
 }
 
-.backwaves-down{
+.backwaves-down {
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -141,8 +145,9 @@ body{
     z-index: 0;
     padding: 0;
 }
+
 /*--------------------background_cover---------------*/
-.over_bg{
+.over_bg {
     background-color: rgba(0, 0, 0, 0);
     justify-content: center;
     position: relative;
@@ -150,10 +155,11 @@ body{
 }
 
 /*-------------logo-------------------*/
-.margin-left{
+.margin-left {
     margin-left: 10px;
 }
-.logo_name{
+
+.logo_name {
     position: relative;
     object-fit: contain;
     z-index: 999;
@@ -164,13 +170,13 @@ body{
     align-self: center;
 }
 
-.logo_header{
-    width:200px;
+.logo_header {
+    width: 200px;
 }
 
 /*------------------buttons-------------------------*/
 .btn-primary {
-    background-image: linear-gradient(to right,  rgba(4,30,66,255) 25%, rgba(30,50,102,255) 50%, rgba(0,144,125,255) 100%);
+    background-image: linear-gradient(to right, rgba(4, 30, 66, 255) 25%, rgba(30, 50, 102, 255) 50%, rgba(0, 144, 125, 255) 100%);
     margin: 10px;
     font-size: 20px;
     letter-spacing: 0px;
@@ -182,9 +188,9 @@ body{
     padding-right: 1%;
     padding-left: 1%;
     margin-left: auto;
-  }
-  
-  .btn-primary:hover {
+}
+
+.btn-primary:hover {
     background-position: right;
     color: #fff;
     text-decoration: none;
@@ -207,18 +213,21 @@ header {
     display: flex;
 }
 
-a:link { 
-    text-decoration: none; 
-  } 
-  a:visited { 
-    text-decoration: none; 
-  } 
-  a:hover { 
-    text-decoration: none; 
-  } 
-  a:active { 
-    text-decoration: none; 
-  }
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
 
 .logo {
     display: inline-block;
@@ -227,26 +236,26 @@ a:link {
     font-size: 3ch;
     margin: 0;
     color: #06b709;
-    -webkit-text-shadow:0px 0px 20px rgba(0,255,68,1);
-    -moz-text-shadow: 0px 0px 20px rgba(0,255,68,1);
-    text-shadow: 0px 0px 20px rgba(0,255,68,1);
+    -webkit-text-shadow: 0px 0px 20px rgba(0, 255, 68, 1);
+    -moz-text-shadow: 0px 0px 20px rgba(0, 255, 68, 1);
+    text-shadow: 0px 0px 20px rgba(0, 255, 68, 1);
 }
 
-.flex{
+.flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
-    
+
 }
 
-.flex-middle{
+.flex-middle {
     display: flex;
     justify-content: center;
     overflow: hidden;
 }
 
-.align_right{
+.align_right {
     position: relative;
     margin-top: 10px;
 }
@@ -258,9 +267,9 @@ a:link {
     font-size: 3ch;
     margin: auto;
     color: #06b709;
-    -webkit-text-shadow: 0px 0px 20px rgba(0,255,68,1);
-    -moz-text-shadow: 0px 0px 20px rgba(0,255,68,1);
-    text-shadow: 0px 0px 20px rgba(0,255,68,1);
+    -webkit-text-shadow: 0px 0px 20px rgba(0, 255, 68, 1);
+    -moz-text-shadow: 0px 0px 20px rgba(0, 255, 68, 1);
+    text-shadow: 0px 0px 20px rgba(0, 255, 68, 1);
 }
 
 .contact_bar {
@@ -273,83 +282,93 @@ a:link {
     bottom: 0;
     left: 0;
     visibility: hidden;
-  }
+}
 
-  .underscore2 {
+.underscore2 {
     position: relative;
     bottom: 0;
     left: 0;
     visibility: hidden;
-  }
+}
 
 
 /*-----------------------------------Marquee-----------------------------------*/
 .marquee {
-    position:relative;
+    position: relative;
     width: 100%;
     max-width: 100%;
     height: 100px;
     overflow-x: hidden;
     z-index: 30;
-  }
+}
 
-  .marquee-text {
+.marquee-text {
     display: inline-block;
     position: relative;
     font-family: 'VT323', sans-serif;
     font-size: 5ch;
     margin: 0;
     color: #06b709;
-    -webkit-text-shadow:0px 0px 20px rgba(0,255,68,1);
-    -moz-text-shadow: 0px 0px 20px rgba(0,255,68,1);
-    text-shadow: 0px 0px 20px rgba(0,255,68,1);
+    -webkit-text-shadow: 0px 0px 20px rgba(0, 255, 68, 1);
+    -moz-text-shadow: 0px 0px 20px rgba(0, 255, 68, 1);
+    text-shadow: 0px 0px 20px rgba(0, 255, 68, 1);
 }
-  
+
 .track {
-width: 100%;
-position: absolute;
-white-space: nowrap;
-will-change: transform;
-animation: marquee 32s linear infinite;
+    width: 100%;
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
 }
 
 
 
 @media (min-width: 1200px) {
-    .text{
+    .text {
         font-size: 1.7vw;
     }
-    .pcb{
+
+    .pcb {
         padding: 5px;
     }
 }
 
 @media (max-width: 1200px) {
-    .text{
+    .text {
         font-size: 2.5vw;
     }
-    .pcb{
+
+    .pcb {
         max-width: 70%;
     }
 }
 
 @media (max-width: 700px) {
-    .text{
+    .text {
         font-size: 3.5vw;
     }
 }
 
 @media (max-width: 500px) {
-    .text{
+    .text {
         font-size: 4.5vw;
     }
 }
 
 @media (min-width: 768px) {
     @keyframes marquee {
-    0% { transform: translateX(0); }
-    99% { transform: translateX(-200%); }
-    100% { transform: translateX(0); }
+        0% {
+            transform: translateX(0);
+        }
+
+        99% {
+            transform: translateX(-200%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
     }
 }
 
@@ -357,82 +376,102 @@ animation: marquee 32s linear infinite;
     .marquee-text {
         font-size: 3ch;
     }
+
     .logo {
         font-family: 'VT323', sans-serif;
         font-size: 2ch;
     }
+
     .contact {
         font-family: 'VT323', sans-serif;
         font-size: 2ch;
     }
 
-    .title{
+    .title {
         font-size: 3ch;
     }
+
     @keyframes marquee {
-    0% { transform: translateX(0); }
-    99% { transform: translateX(-1000%); }
-    100% { transform: translateX(0); }
+        0% {
+            transform: translateX(0);
+        }
+
+        99% {
+            transform: translateX(-1000%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
     }
 }
 
 /*-------------------------accordion---------------------------------*/
-.accordion_text{
+.accordion_text {
     color: rgb(255, 255, 255);
 }
 
 /* Define variables */
 :root {
-    --accordion-bg: transparent; /* Transparent background */
-    --accordion-outline-color: #ffffff; /* White outline color */
-    --accordion-bg-hover: #2c2c2c71; /* Darker background on hover */
-    --accordion-bg-active: #60606000; /* Even darker background when selected */
-    --accordion-text-color: #ffffff; /* White text */
-    --accordion-arrow-color: #ffffff; /* White arrow color */
-  }
-  
-  /* Accordion styles */
-  .accordion-item {
+    --accordion-bg: transparent;
+    /* Transparent background */
+    --accordion-outline-color: #ffffff;
+    /* White outline color */
+    --accordion-bg-hover: #2c2c2c71;
+    /* Darker background on hover */
+    --accordion-bg-active: #60606000;
+    /* Even darker background when selected */
+    --accordion-text-color: #ffffff;
+    /* White text */
+    --accordion-arrow-color: #ffffff;
+    /* White arrow color */
+}
+
+/* Accordion styles */
+.accordion-item {
     background-color: var(--accordion-bg);
-    border: 1px solid var(--accordion-outline-color); /* White outline */
+    border: 1px solid var(--accordion-outline-color);
+    /* White outline */
     border-radius: 0.25rem;
     margin-left: 2ch;
     margin-right: 2ch;
-  }
-  
-  .accordion-button {
-    
+}
+
+.accordion-button {
+
     background-color: var(--accordion-bg);
     color: var(--accordion-text-color);
-    border: none; /* Remove border */
-  }
-  
-  .accordion-button:hover {
+    border: none;
+    /* Remove border */
+}
+
+.accordion-button:hover {
     background-color: var(--accordion-bg-hover);
-  }
-  
-  .accordion-button:not(.collapsed)::after {
+}
+
+.accordion-button:not(.collapsed)::after {
     background-color: var(--accordion-bg-active);
-  }
-  
-  .accordion-button:not(.collapsed) {
+}
+
+.accordion-button:not(.collapsed) {
     background-color: rgba(28, 28, 28, 0.134);
     color: var(--accordion-text-color);
-  }
-  
-  .accordion-button:focus {
-    box-shadow: none; /* Transparent focus effect */
-  }
-  
-  .accordion-button:not(.collapsed)::after {
+}
+
+.accordion-button:focus {
     box-shadow: none;
-  }
-  
-  .accordion-button::after {
-    border-color: transparent transparent var(--accordion-arrow-color); /* Transparent arrow border */
-  }
-  
-  .accordion-body {
+    /* Transparent focus effect */
+}
+
+.accordion-button:not(.collapsed)::after {
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    border-color: transparent transparent var(--accordion-arrow-color);
+    /* Transparent arrow border */
+}
+
+.accordion-body {
     border-top: 1px solid white;
-  }
-  
+}
