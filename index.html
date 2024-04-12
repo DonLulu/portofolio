@@ -12,11 +12,11 @@
   <link rel="icon" type="image/x-icon" href="/ressources/LOGO.png">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.54/build/spline-viewer.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <title>Lucas Cizeron</title>
 </head>
 
 <body>
-
   <!-- Header -->
   <header class="nav-down">
     <div class="sticky flex">
@@ -231,6 +231,7 @@
           url="https://prod.spline.design/IvTm2hiT843cP25D/scene.splinecode"></spline-viewer>
       </div>
     </div>
+    <div id="placeholder"></div>
   </section>
 
 
@@ -240,41 +241,49 @@
 
 </body>
 
-<script>
-  var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-  console.log("is safari:" + isSafari);
 
+<script>
+  function isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
+  // Get the placeholder element
+  var placeholder = document.getElementById('placeholder');
+
+  // Append the HTML code to the placeholder
+
+  // Function to check if the user is using Safari browser
+  var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+  if (!isSafari)
+    placeholder.innerHTML = '<br> You are using Safari. Please visit the website using Google or Firefox for the best experience. <br><br>';
+  else if (isMobileDevice())
+    placeholder.innerHTML = '<br> You are using a mobile device. Please visit the website on a computer for the best experience. <br><br>';
+
+
+  // Update video sources based on browser
   var video1 = document.querySelector('.logo_name');
   var video2 = document.querySelector('.pcb');
-
   var videoSource1 = document.getElementById('videoSource1');
   var videoSource2 = document.getElementById('videoSource2');
 
   if (isSafari) {
     videoSource1.src = 'ressources/logo.mp4';
     videoSource1.type = 'video/mp4;codecs=hvc1';
-
-
     videoSource2.src = 'ressources/pcb.mp4';
     videoSource2.type = 'video/mp4;codecs=hvc1';
-
-  }
-  else {
+  } else {
     videoSource1.src = 'ressources/logo.webm';
     videoSource1.type = 'video/webm';
-
     videoSource2.src = 'ressources/pcb.webm';
     videoSource2.type = 'video/webm';
   }
-  // You may need to manually trigger video playback if autoplay doesn't work consistently
+
+  // Load and play videos
   video1.load();
   video1.play();
-
   video2.load();
   video2.play();
-
-
-
 </script>
 
 <script>
