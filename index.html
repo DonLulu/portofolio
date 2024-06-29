@@ -6,317 +6,249 @@
   <meta name="theme-color" content="#000000">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="/ressources/LOGO.png">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.54/build/spline-viewer.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <title>Lucas Cizeron</title>
+  <title>Portofolio</title>
 </head>
 
 <body>
-  <!-- Header -->
-  <header class="nav-down">
-    <div class="sticky flex">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand margin-left" href="lucas-cizeron.com">
-          <p class="logo">lucas.cizeron<span class="underscore">_</span></p>
-        </a>
-      </nav>
+
+  <main>
+    <img src="backgroundImages/4.png" alt="layer0" id="background" class="parallax bg-img">
+    <img src="backgroundImages/3.png" alt="layer4" id="layer4" class="parallax bg-layer4">
+    <img src="backgroundImages/2.png" alt="layer3" id="layer3" class="parallax bg-layer3">
+
+    <div class="text parallax">
+
+      <div class="container-main">
+        <br>
+        <p class="name" id="name">LUCAS CIZERON</p>
+
+      </div>
+
     </div>
 
-  </header>
+    <img src="backgroundImages/1.png" alt="layer2" id="layer2" class="parallax bg-layer2">
+    <img src="backgroundImages/0.png" alt="layer1" id="layer1" class="parallax bg-layer1">
 
-  <!-- lucas cizeron 3d spinner-->
 
-  <video class="logo_name" width="1024" height="1024" autoplay muted loop playsinline>
-    <source id="videoSource1" src="" type="">
-    Your browser does not support the video.
-  </video>
+  </main>
 
-  <section>
-    <div class="over_bg" , class="container mt-4">
-      <div class="marquee">
-        <div class="track">
-          <div class="content">&nbsp; <p class="marquee-text">ÉTUDIANT PASSIONNÉ À L'EPITA, ÉCOLE POUR L'INFORMATIQUE ET
-              LES TECHNIQUES AVANCÉES, LYON • ÉTUDIANT PASSIONNÉ À L'EPITA, ÉCOLE POUR L'INFORMATIQUE ET LES TECHNIQUES
-              AVANCÉES, LYON • ÉTUDIANT PASSIONNÉ À L'EPITA, ÉCOLE POUR L'INFORMATIQUE ET LES TECHNIQUES AVANCÉES, LYON
-              • ÉTUDIANT PASSIONNÉ À L'EPITA, ÉCOLE POUR L'INFORMATIQUE ET LES TECHNIQUES AVANCÉES, LYON • ÉTUDIANT
-              PASSIONNÉ À L'EPITA, ÉCOLE POUR L'INFORMATIQUE ET LES TECHNIQUES AVANCÉES, LYON • ÉTUDIANT PASSIONNÉ À
-              L'EPITA, ÉCOLE POUR L'INFORMATIQUE ET LES TECHNIQUES AVANCÉES, LYON •</p>
+
+  <div id="sec" class="sec">
+
+    <div class="language-switch">
+      <button id="fr-btn" class="lang-btn active" onclick="toggleLanguage('fr')">Français</button>
+      <button id="en-btn" class="lang-btn" onclick="toggleLanguage('en')">English</button>
+    </div>
+    <br><br>
+    <p class="subtitle" data-fr="En quête de connaissances approfondies dans le domaine de l'informatique, 
+    je m'investis pleinement dans un cursus d'ingénierie informatique à la pointe 
+    des technologies. 
+    <br><br>
+    Mon parcours à l'EPITA est caractérisé par une approche pratique et orientée projet.
+    Parallèlement à l'informatique, je suis depuis longtemps passionné par la mécanique 
+    appliquée au domaine de l'automobile ou de l'horlogerie, mais également par la robotique.
+    <br><br>
+    Autant de domaines auxquels j'aimerais un jour appliquer mon savoir-faire en informatique." data-en="In search of in-depth knowledge in the field of computer science,
+    I am fully committed to a cutting-edge computer engineering curriculum.
+    <br><br>
+    My journey at EPITA is characterized by a practical, project-oriented approach.
+    Alongside computer science, I have long been passionate about mechanics
+    applied to the automotive or watchmaking industry, as well as robotics.
+    <br><br>
+    These are all fields where I hope to one day apply my computer science expertise.">
+    </p>
+
+    <!-- Project section -->
+    <br><br>
+    <p class="subtitle background_title" data-en="Projects" data-fr="Projets"></p>
+
+    <div class="container-main">
+      <!-- 42SH card -->
+      <div class="card card-1">
+        <div class="preview">
+          <h4>42SH</h4>
+        </div>
+        <div class="content">
+          <div>
+            <h2>42SH</h2>
+            <br>
+            <br>
+            <p class="subtitle"
+              data-fr="Pendant un mois, j'ai travaillé en équipe de quatre personnes pour reproduire un shell Unix conforme à la norme POSIX."
+              data-en="During one month, I worked as a team of four to reproduce a Unix shell that conforms to the POSIX standard.">
+            </p>
+            <h3>C</h3>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xl-6">
-          <p class="text">
 
-            En quête de connaissances approfondies dans le domaine de <span class="purple">l'informatique</span>,
-            je m'investis pleinement dans un cursus d'ingénierie informatique à la pointe des technologies.
-            Mon parcours à <span class="purple">l'EPITA</span> est caractérisé par une approche pratique et orientée
-            <span class="purple">projet</span>.<br><br>
-            Parallèlement à l'informatique, je suis depuis longtemps passioné par la <span
-              class="purple">mécanique</span> appliquée au domaine de l'automobile ou de l'horlogerie,
-            mais également par la <span class="purple">robotique</span>. <br><br>
-            Autant de domaines auquels j'aimerais un jour appliquer mon savoir faire en <span
-              class="purple">informatique</span>.
-          </p>
+      <!-- PING card -->
+      <div class="card card-1">
+        <div class="preview">
+          <h4>PING</h4>
         </div>
-        <div class="pcbcol col-xl-6">
-          <video class="pcb" autoplay muted loop playsinline>
-            <source id="videoSource2" src="" type="">
-            Your browser does not support the video.
-          </video>
+        <div class="content">
+          <div>
+            <h2>PING</h2>
+            <br>
+            <br>
+            <p class="subtitle" data-fr="Reproduction d'un IDE front-end et back-end incluant 
+                  des contraintes client pour simuler la gestion d'un projet. 
+                  Supportant de nombreux languages en auto-complétion, de la personnalisation et 
+                  toute les fonctionnalités git & maven. <br> Déployé avec electron" data-en="Reproduction of the front-end & back-end including client 
+                  constraints to emulate client collaboration.
+                  Supports multiple languages auto-completion, personalization and 
+                  all maven & git functionnalities. <br>Deployed using electron"></p>
+            <h3>C</h3>
+          </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-xl-6">
-
-          <p class="title">PROJETS</p>
-          <div class="accordion" id="accordionExample">
-            <!--42sh-->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  42sh&nbsp · &nbsp<span class="purple">C</span>
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <p class="accordion_text">
-                    Durant un mois, j'ai travaillé à la reproduction d'un <span class="blue">shell Unix</span> se
-                    conformant au standard POSIX avec 3 autres personnes.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                  aria-expanded="true" aria-controls="collapseTwo">
-                  Tiger Compiler&nbsp · &nbsp<span class="purple">C++</span>
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <p class="accordion_text">
-                    Durant deux mois, j'ai travaillé à la reproduction d'un <span class="blue">Compilateur C++</span>
-                    pour le langage Tiger avec 3 autres personnes.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                  aria-expanded="true" aria-controls="collapseThree">
-                  OCR Sudoku Solver&nbsp · &nbsp<span class="purple">C</span>
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <p class="accordion_text">
-                    Durant 5 mois, nous avons travaillé à quatre sur un <span class="blue">logiciel de reconnaissance
-                      optique de caractères</span>,
-                    capable de détecter une grille de sudoku ainsi que les chiffres qu'elle contient pour être résolue
-                    automatiquement.
+      <!-- OCR CARD -->
+      <div class="card card-1">
+        <div class="preview">
+          <h4>OCR</h4>
+        </div>
+        <div class="content">
+          <div>
+            <h2>OCR</h2>
+            <br>
+            <br>
+            <p class="subtitle" data-fr="
+                    Logiciel de reconnaissance optique de caractères, capable de détecter une grille de sudoku 
+                    ainsi que les chiffres qu'elle contient pour être résolue automatiquement. <br><br> 
                     Le projet a été effectué de zéro, en C et sans l'aide de librairies externes.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                  aria-expanded="true" aria-controls="collapseFour">
-                  Zakharov Project: Undead Prison&nbsp · &nbsp<span class="purple">C#</span>
-                </button>
-              </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <p class="accordion_text">
-                    Durant 6 mois, j'ai travaillé avec trois autres étudiants afin de créer un <span class="blue">jeu
-                      zombie en 3D</span> inspiré de la franchise Call of Duty.
-                    Pour ce projet effectué sur Unity, j'ai entre autres été en charge du level design,
-                    j'ai donc utilisé Quixel, une librairie de modèles 3D utilisée par de nombreuses entreprises comme
-                    Disney ou encore Warner Bros.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-6">
-
-          <p class="title">EXPÉRIENCES</p>
-          <div class="accordion" id="accordionExample2">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                  aria-expanded="true" aria-controls="collapseFive">
-                  Intérimaire&nbsp·&nbsp<span class="blue">Annecy</span>
-                </button>
-              </h2>
-              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
-                <div class="accordion-body">
-                  <p class="accordion_text">
-                    <span class="purple">ACTIV'EMPLOI</span><br><br>
-                    De multiples jobs allant d'un à quatre jours, incluant du travail d'équipe et de la force physique.
-                    <br><br>J'ai par exemple eu la chance de participer à la mise en place et l'ameublement du Festival
-                    International du Film d'Animation d'Annecy.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
-                  aria-expanded="true" aria-controls="collapseSix">
-                  Assistant système&nbsp·&nbsp<span class="blue">Reignier</span>
-                </button>
-              </h2>
-              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
-                <div class="accordion-body">
-                  <p class="accordion_text">
-                    <span class="purple">TECHPLUS INGÉNIERIE ROBOTIQUE</span><br><br>
-
-                    J'ai pris part à de nombreuses activités au sein de l'entreprise notamment la construction d'un
-                    système à air pneumatique pour la pince d'un bras robotique.
-                    <br><br>Mon expérience fut de courte durée mais très inspirante concernant le parcours que je
-                    suivrai ensuite.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
-                  aria-expanded="true" aria-controls="collapseSeven">
-                  Game Designer&nbsp·&nbsp<span class="blue">Genève</span>
-                </button>
-              </h2>
-              <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
-                <div class="accordion-body">
-                  <p class="accordion_text">
-                    <span class="purple">Cabinet Orthophonique Privé</span><br><br>
-                    J'ai eu la chance de créer dans son entièreté un jeu vidéo à but éducatif en utilisant Unity
-                    Le projet à été effectué pour le compte d'un cabinet ortophonique genevois travaillant avec des
-                    enfants.
-                  </p>
-                </div>
-              </div>
-            </div>
+                  " data-en="
+                    Optical character recognition software capable of detecting a 
+                    sudoku grid as well as the 
+                    numbers it contains to automatically solve it. <br><br> 
+                    The project was programmed from scratch in C without using any library.">
+            </p>
+            <h3>C</h3>
           </div>
         </div>
       </div>
 
-      <br>
-      <br>
-
-      <div class="row flex-middle">
-        <p class="title">CONTACT</p>
-        <spline-viewer class="keyboard" loading="eager" id="scrollto" loading-anim-type="spinner-big-light"
-          url="https://prod.spline.design/yN1DWISVcgxsSrRI/scene.splinecode"></spline-viewer>
-        <spline-viewer class="backwaves-down" loading="eager" loading-anim-type="spinner-big-light"
-          url="https://prod.spline.design/IvTm2hiT843cP25D/scene.splinecode"></spline-viewer>
+      <!-- Tiger CARD -->
+      <div class="card card-1">
+        <div class="preview">
+          <h4>TIGER</h4>
+        </div>
+        <div class="content">
+          <div>
+            <h2>TIGER</h2>
+            <br>
+            <br>
+            <p class="subtitle"
+              data-fr="Implémentation d'un Compilateur C++ pour le langage Tiger avec 3 autres personnes en utilisant notament Bison et Flex."
+              data-en="Implementation of a C++ compiler for the Tiger language with 3 other students, using tools such as Bison and Flex">
+            </p>
+            <h3>C++</h3>
+          </div>
+        </div>
       </div>
     </div>
-    <div id="placeholder"></div>
-  </section>
+
+    <!-- Experiences section -->
+    <br><br><br>
+    <p class="subtitle background_title" data-en="Experiences" data-fr="Experiences"></p>
+
+    <div class="container-main">
+      <!-- Manutentionnaire card -->
+      <div class="card card-1">
+        <div class="preview">
+          <h5 class="subtitle" data-fr="Manutentionnaire" data-en="Warehouseman"></h5>
+        </div>
+        <div class="content">
+          <div>
+            <h1 class="subtitle" data-fr="Intérimaire" data-en="Temporary"></h1>
+            <br>
+            <br>
+            <p class="subtitle" data-fr="De multiples jobs comme la
+              mise en place et l'ameublement <br> du Festival International du Film d'Animation d'Annecy <br>
+              <br>Travail consistant à décharger des camions." data-en="Multiple jobs such as furnishing of the <br> Festival International du Film d'Animation d'Annecy,
+              <br><br>The work consisted in unloading trucks.">
+            </p>
+            <h3>ACTI'V EMPLOI</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game Designer card -->
+      <div class="card card-1">
+        <div class="preview">
+          <h5 class="subtitle" data-fr="Game Designer" data-en="Game Designer"></h5>
+        </div>
+        <div class="content">
+          <div>
+            <h1 class="subtitle" data-fr="Freelance" data-en="Freelance"></h1>
+            <br>
+            <br>
+            <p class="subtitle"
+              data-fr="J'ai eu la chance de créer dans son entièreté un jeu vidéo à but éducatif pour le compte d'un cabinet ortophonique genevois travaillant avec des enfants."
+              data-en="
+              I had the chance of creating an educational video game on behalf of a speech therapy office based in Geneva who mainly worked with childrens.">
+            </p>
+            <h3 class="subtitle" data-fr="Cabinet Orthophonique Privé" data-en="Private Speech Therapy Office"></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Assistant système CARD -->
+      <div class="card card-1">
+        <div class="preview">
+          <h5 class="subtitle" data-fr="Assistant système" data-en="System Assistant"></h5>
+        </div>
+        <div class="content">
+          <div>
+            <h1 class="subtitle" data-fr="Stage" data-en="Internship"></h1>
+            <br>
+            <br>
+            <p class="subtitle"
+              data-fr="Nombreuses activités au sein de l'entreprise notamment la construction d'un système à air pneumatique pour la pince d'un bras robotique. <br><br> Mon expérience fut de courte durée mais très inspirante concernant le parcours que je suivrai ensuite."
+              data-en="
+             Numerous activities within the company, notably the construction of a pneumatic air system for the clamp of a robotic arm. <br><br> My experience there was very short but inspiring regarding what I would do next.">
+            </p>
+            <h3>TECHPLUS</h3>
+          </div>
+        </div>
+      </div>
 
 
-  <!--background waves-->
-  <spline-viewer class="backwaves" loading-anim-type="spinner-big-light"
-    url="https://prod.spline.design/8n5O5q368MQBAV5G/scene.splinecode"></spline-viewer>
+      <!-- Experiences section -->
+    <br><br><br>
+    
+
+      <!-- Alert Toast -->
+      <div id="liveToast" class="position-fixed top-0 end-0 p-3 toast" role="alert" aria-live="assertive"
+        aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body">
+            Use a desktop browser to see all the cool effects
+          </div>
+          <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+
+    <p class="subtitle background_title" data-en="Contact" data-fr="Contact"></p>
+
+    <div class="contacts container-main">
+      <a href="https://www.linkedin.com/in/cizeron-lucas/" class="linkedin_card" data-tilt data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+      </a>
+      <a href="https://www.linkedin.com/in/cizeron-lucas/" class="mail_card" data-tilt data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+      </a>
+    </div>
 
 </body>
-
-
-<script>
-  function isMobileDevice() {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  }
-
-  // Get the placeholder element
-  var placeholder = document.getElementById('placeholder');
-
-  // Append the HTML code to the placeholder
-
-  // Function to check if the user is using Safari browser
-  var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
-  if (isSafari)
-    placeholder.innerHTML = '<br> You are using Safari. Please visit the website using Google or Firefox for the best experience. <br><br>';
-  else if (isMobileDevice())
-    placeholder.innerHTML = '<br> You are using a mobile device. Please visit the website on a computer for the best experience. <br><br>';
-
-
-  // Update video sources based on browser
-  var video1 = document.querySelector('.logo_name');
-  var video2 = document.querySelector('.pcb');
-  var videoSource1 = document.getElementById('videoSource1');
-  var videoSource2 = document.getElementById('videoSource2');
-
-  if (isSafari) {
-    videoSource1.src = 'ressources/logo.mp4';
-    videoSource1.type = 'video/mp4;codecs=hvc1';
-    videoSource2.src = 'ressources/pcb.mp4';
-    videoSource2.type = 'video/mp4;codecs=hvc1';
-  } else {
-    videoSource1.src = 'ressources/logo.webm';
-    videoSource1.type = 'video/webm';
-    videoSource2.src = 'ressources/pcb.webm';
-    videoSource2.type = 'video/webm';
-  }
-
-  // Load and play videos
-  video1.load();
-  video1.play();
-  video2.load();
-  video2.play();
-</script>
-
-<script>
-  const underscore = document.querySelector('.underscore');
-  document.addEventListener('DOMContentLoaded', function () {
-    setInterval(function () {
-      underscore.style.visibility = (underscore.style.visibility === 'visible') ? 'hidden' : 'visible';
-    }, 600);
-  });
-</script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const splineViewers = document.querySelectorAll('spline-viewer');
-
-    splineViewers.forEach(splineViewer => {
-      if (splineViewer) {
-        const shadowRoot = splineViewer.shadowRoot;
-
-        if (shadowRoot) {
-          const style = document.createElement('style');
-
-          style.textContent = `
-        #logo {
-            visibility: hidden;
-        }
-        `;
-
-          shadowRoot.appendChild(style);
-        }
-      }
-    });
-  });
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
 
 </html>
