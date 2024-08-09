@@ -10,6 +10,14 @@ let ticking = false;
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // Reload page once on load up to get rid of bug
+  if (!sessionStorage.getItem('reloaded')) {
+    // Set a flag in sessionStorage indicating that the page has been reloaded
+    sessionStorage.setItem('reloaded', 'true');
+    
+    // Reload the page
+    window.location.reload();
+  }
   window.addEventListener('scroll', function () {
     if (!ticking) {
       window.requestAnimationFrame(function () {
